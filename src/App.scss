@@ -1,0 +1,232 @@
+$success: #526863;
+$info: #715c83;
+$black: #242424;
+$white: #f5fefd;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$font-normal: "Alegreya Sans";
+$font-blog-title: "Alegreya";
+$font-fancy: "Nosifer";
+
+/* Global */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-fancy;
+}
+p,
+a {
+  font-family: $font-normal;
+}
+
+span {
+  font-family: $font-blog-title;
+}
+
+header,
+footer {
+  .nav-link {
+    color: #715c83;
+  }
+
+  .nav-link:hover {
+    color: #8f79a1;
+    text-decoration: underline;
+  }
+}
+
+/* This was used in the blogs as well */
+.landing-cards {
+  width: 18rem;
+}
+/* Should be normal-cards */
+
+.card-title {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.card-title:hover {
+  text-decoration: underline;
+}
+
+.card-body {
+  min-height: 214px;
+}
+
+.card-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.spotify {
+  max-width: 516px;
+  border-radius: 12px;
+}
+
+footer {
+  border-top: 4px solid #526863;
+}
+
+/* Landing Page */
+main {
+  /* Banner Section */
+  .main-header-wrapper {
+    background: rgb(36, 36, 36);
+    background: linear-gradient(
+      180deg,
+      rgba(36, 36, 36, 1) 30%,
+      rgba(245, 254, 253, 1) 62%
+    );
+  }
+
+  .header-title {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 924px) {
+    .header-title {
+      font-size: 2rem;
+    }
+  }
+
+  .carousel-section {
+    padding-bottom: 5rem;
+  }
+
+  .banner-carousel {
+    border: 4px solid #242424;
+    border-radius: 10px;
+    max-width: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  }
+
+  .carousel-inner img {
+    border-radius: 5px;
+  }
+
+  .carousel-title {
+    text-shadow: 1px 0px 0px #000;
+  }
+
+  .carousel-item:hover .carousel-title {
+    text-decoration: underline;
+  }
+
+  .banner-carousel .carousel-control-prev {
+    margin-left: 0.5rem;
+  }
+
+  .banner-carousel .carousel-control-next {
+    margin-right: 0.5rem;
+  }
+
+  .banner-carousel .carousel-control-prev,
+  .banner-carousel .carousel-control-next {
+    display: none;
+    background-color: hsla(0, 0%, 100%, 0.5);
+  }
+
+  .banner-carousel:hover .carousel-control-prev,
+  .banner-carousel:hover .carousel-control-next {
+    display: block;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Recent Blogs Section */
+  .recent-articles-section {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    position: relative;
+  }
+
+  .recent-articles-section::before,
+  .recent-articles-section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    transform: skewY(-3deg);
+  }
+
+  .recent-articles-section::before {
+    top: -50px;
+    background-color: #f5fefd;
+  }
+
+  .recent-articles-section::after {
+    bottom: -50px;
+    background-color: #fff;
+  }
+
+  /* Large Screen Carousel */
+  @media (max-width: 1399px) {
+    .recent-blogs-lg-wrapper .carousel-control-prev {
+      left: -2rem;
+    }
+  }
+
+  @media (max-width: 1399px) {
+    .recent-blogs-lg-wrapper .carousel-control-next {
+      right: -2rem;
+    }
+  }
+
+  /* Small Screen Carousel */
+  .recent-blogs-sm-wrapper {
+    max-width: 500px;
+  }
+
+  @media (max-width: 425px) {
+    .recent-blogs-sm-wrapper .carousel-control-prev {
+      left: -1rem;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .recent-blogs-sm-wrapper .carousel-control-next {
+      right: -1rem;
+    }
+  }
+
+  /* Description and Spotify Section */
+  .description-spotify-section {
+    margin-top: 1rem;
+    padding: 6rem 0;
+    // background-image: url("../assets/images/BackgroundSmall.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: 992px) {
+    .description-spotify-section {
+      // background-image: url("../assets/images/BackgroundBig.png");
+      margin-top: 0;
+    }
+  }
+}
+
+/* Blog Category Pages */
+.not-landing-cards {
+  width: 25rem;
+}
+
+@media (max-width: 432px) {
+  .not-landing-cards {
+    width: 18rem;
+  }
+}
