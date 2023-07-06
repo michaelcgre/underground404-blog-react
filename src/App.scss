@@ -27,8 +27,7 @@ span {
   font-family: $font-blog-title;
 }
 
-header,
-footer {
+Nav {
   .nav-link {
     color: #715c83;
   }
@@ -229,4 +228,13 @@ main {
   .not-landing-cards {
     width: 18rem;
   }
+}
+
+/*NEW NEW NEW */
+.nav-background {
+  background-color: #242424;
+}
+
+.header-wrapper {
+  background-color: #242424;
 }
