@@ -26,7 +26,7 @@ const Header = () => {
             <Nav className="ms-auto" navbar>
               <NavItem>
                 <NavLink
-                  className="nav-link fw-bold text-uppercase fs-5 text-center mx-3"
+                  className="nav-link fw-bold text-uppercase fs-5 text-center"
                   to="/artistSpotlight"
                 >
                   Artist Spotlight

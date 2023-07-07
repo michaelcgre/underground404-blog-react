@@ -1,9 +1,12 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "@fontsource/nosifer";
+@import "@fontsource/alegreya-sans";
+@import "@fontsource/alegreya";
+
 $success: #526863;
 $info: #715c83;
 $black: #242424;
 $white: #f5fefd;
-
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 $font-normal: "Alegreya Sans";
 $font-blog-title: "Alegreya";
@@ -27,7 +30,8 @@ span {
   font-family: $font-blog-title;
 }
 
-Nav {
+Nav,
+footer {
   .nav-link {
     color: #715c83;
   }
@@ -235,6 +239,26 @@ main {
   background-color: #242424;
 }
 
-.header-wrapper {
+.header-wrapper,
+.site-footer {
   background-color: #242424;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nosifer";
+  color: #526863;
+}
+
+p,
+a {
+  font-family: "Alegreya Sans";
+}
+
+span {
+  font-family: "Alegreya";
 }

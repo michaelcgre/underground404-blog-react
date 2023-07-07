@@ -17,6 +17,7 @@ function App() {
         <Route path="musicReviews" element={<MusicReviews />} />
         <Route path="lifestyle" element={<Lifestyle />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
