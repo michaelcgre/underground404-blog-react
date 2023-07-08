@@ -1,7 +1,10 @@
+import React from "react";
+import BannerCarousel from "../components/Banner";
+
 const HomePage = () => {
   return (
     <div>
-      <h1>Home Page</h1>
+      <BannerCarousel />
     </div>
   );
 };
