@@ -41,6 +41,7 @@ function BannerCarousel(props) {
         key={index}
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
+        className="banner-carousel-item"
       >
         <Link to={`/blog/${blog.id}`} className="carousel-link">
           <img
@@ -48,21 +49,19 @@ function BannerCarousel(props) {
             src={blog.carouselImage}
             alt={blog.title}
           />
+          <CarouselCaption
+            className="banner-carousel-title fs-1 fw-bold"
+            captionText={blog.title}
+          />
         </Link>
-        <CarouselCaption
-          className="banner-carousel-title fs-1 fw-bold"
-          captionText={blog.title}
-        />
       </CarouselItem>
     );
   });
 
   return (
     <div className="banner-wrapper">
-      <h1 className="d-flex align-items-center justify-content-center banner-title mb-5">
-        Beyond the Mainstream
-      </h1>
-      <Container className="carousel-section d-flex align-items-center justify-content-center">
+      <Container className="carousel-section d-flex flex-column align-items-center justify-content-center">
+        <h1 className="banner-title mb-5">Beyond the Mainstream</h1>
         <Carousel
           className="banner-carousel mb-5"
           activeIndex={activeIndex}
@@ -73,17 +72,20 @@ function BannerCarousel(props) {
             items={featuredBlogs}
             activeIndex={activeIndex}
             onClickHandler={goToIndex}
+            className="banner-carousel-indicators"
           />
           {slides}
           <CarouselControl
             direction="prev"
             directionText="Previous"
             onClickHandler={previous}
+            className="banner-carousel-prev"
           />
           <CarouselControl
             direction="next"
             directionText="Next"
             onClickHandler={next}
+            className="banner-carousel-next"
           />
         </Carousel>
       </Container>

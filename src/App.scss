@@ -300,3 +300,14 @@ span {
   text-shadow: 1px 0px 0px #000;
   color: #715c83 !important;
 }
+
+.banner-carousel-item:hover .banner-carousel-title {
+  text-decoration: underline;
+}
+
+.banner-carousel-prev,
+.banner-carousel-next {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 20rem;
+}

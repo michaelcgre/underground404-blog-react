@@ -20,7 +20,7 @@ export const blogs = [
   {
     id: 0,
     title: "Denzel Curry- Artist Spotlight",
-    blogtype: "Artist Spotlight",
+    blogType: "Artist Spotlight",
     author: "Michael Gregorio",
     date: "06/08/2023",
     featured: true,
@@ -28,6 +28,8 @@ export const blogs = [
     carouselImage: DenzelCurryMedium,
     blogHeader: DenzelCurryLarge,
     extraImage: DenzelCurry2,
+    description:
+      "Denzel Curry is an American rapper, songwriter, and record producer known for his energetic performances...",
     spotify:
       "https://open.spotify.com/embed/artist/6fxyWrfmjcbj5d12gXeiNV?utm_source=generator",
     paragraphOne:
@@ -50,7 +52,7 @@ export const blogs = [
   {
     id: 1,
     title: "Flatbush Zombies- Artist Spotlight",
-    blogtype: "Artist Spotlight",
+    blogType: "Artist Spotlight",
     author: "Michael Gregorio",
     date: "06/08/2023",
     featured: true,
@@ -58,6 +60,8 @@ export const blogs = [
     carouselImage: FlabushZombiesLarge,
     blogHeader: FlabushZombiesLarge,
     extraImage: FlabushZombies2,
+    description:
+      "Flatbush Zombies is an American hip-hop group hailing from the Flatbush neighborhood of Brooklyn, New York...",
     spotify:
       "https://open.spotify.com/embed/artist/1dqGS5sT6PE2wEvP1gROZC?utm_source=generator",
     paragraphOne:
@@ -72,13 +76,15 @@ export const blogs = [
   {
     id: 2,
     title: "Castle by BLP Kosher- Music Review",
-    blogtype: "Music Review",
+    blogType: "Music Review",
     author: "Michael Gregorio",
     date: "06/08/2023",
     featured: false,
     blogImage: BlpKosherSmall,
     blogHeader: BlpKosherLarge,
     extraImage: BlpKosher2,
+    description:
+      "Castle by BLP Kosher is a dynamic rap track that exudes confidence and lyrical prowess...",
     spotify:
       "https://open.spotify.com/embed/artist/6w60ExNMjs0gd4ioh7GMRI?utm_source=generator",
     paragraphOne:
@@ -93,7 +99,7 @@ export const blogs = [
   {
     id: 3,
     title: "From Lyrics to Engines: Xavier Wulf's Influence",
-    blogtype: "Lifestyle",
+    blogType: "Lifestyle",
     author: "Michael Gregorio",
     date: "06/08/2023",
     featured: true,
@@ -101,6 +107,8 @@ export const blogs = [
     carouselImage: XavierWulfLarge,
     blogHeader: XavierWulfMedium,
     extraImage: XavierWulf2,
+    description:
+      "In the realm of hip-hop, artists often extend their influence beyond music, making an impact on various...",
     spotify:
       "https://open.spotify.com/embed/artist/3uo0ix4Y67XHVWBhXXIY1S?utm_source=generator",
     paragraphOne:
@@ -117,13 +125,15 @@ export const blogs = [
   {
     id: 4,
     title: "Forever Brothers: Lil Tracy and Lil Peep",
-    blogtype: "Lifestyle",
+    blogType: "Lifestyle",
     author: "Michael Gregorio",
     date: "06/08/2023",
     featured: false,
     blogImage: LilTracySmall,
     blogHeader: LilTracyLarge,
     extraImage: LilTracyPeep,
+    description:
+      "In the realm of alternative hip-hop and emo rap, few collaborations and friendships have left as...",
     spotify:
       "https://open.spotify.com/embed/artist/5g63iWaMJ2UrkZMkCC8dMi?utm_source=generator",
     paragraphOne:
