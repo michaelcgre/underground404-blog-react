@@ -73,14 +73,20 @@ const BlogCarousel = () => {
                   return (
                     <div className="col-md-4" key={blogIndex}>
                       <Card>
-                        <CardImg
-                          top
-                          width="100%"
-                          src={blogToShow.blogImage}
-                          alt={blogToShow.title}
-                        />
+                        <Link to={`/blogs/${blog.id}`}>
+                          <CardImg
+                            top
+                            width="100%"
+                            src={blogToShow.blogImage}
+                            alt={blogToShow.title}
+                          />
+                        </Link>
                         <CardBody>
-                          <CardTitle>{blogToShow.title}</CardTitle>
+                          <CardTitle>
+                            <a href={`/blogs/${blogToShow.id}`}>
+                              {blogToShow.title}
+                            </a>
+                          </CardTitle>
                           <CardText>{blogToShow.description}</CardText>
                           <Button
                             tag={Link}

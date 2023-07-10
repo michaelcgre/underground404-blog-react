@@ -43,7 +43,7 @@ function BannerCarousel(props) {
         onExited={() => setAnimating(false)}
         className="banner-carousel-item"
       >
-        <Link to={`/blog/${blog.id}`} className="carousel-link">
+        <Link to={`/blogs/${blog.id}`} className="carousel-link">
           <img
             className="banner-images"
             src={blog.carouselImage}
