@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { blogs } from "../data/blogs";
 import { Container, Col, Row } from "reactstrap";
 import YouMightLike from "../components/YouMightLike";
+import { DiscussionEmbed } from "disqus-react";
 
 const BlogPage = () => {
   const { id } = useParams();
@@ -47,6 +48,17 @@ const BlogPage = () => {
           ></iframe>
           <YouMightLike currentBlogId={Number(id)} />
         </Col>
+      </Row>
+      <Row>
+        <DiscussionEmbed
+          shortname="underground404-com"
+          config={{
+            url: window.location.href,
+            identifier: String(blog.id),
+            title: blog.title,
+            language: "zh_EN",
+          }}
+        />
       </Row>
     </Container>
   );
