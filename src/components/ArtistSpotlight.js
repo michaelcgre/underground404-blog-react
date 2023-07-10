@@ -1,14 +1,7 @@
+import React from "react";
 import { selectArtistSpotlight } from "../data/blogsSlice";
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  CardImg,
-  CardBody,
-  CardText,
-  Button,
-} from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
+import BlogCard from "../data/BlogCard";
 
 const ArtistSpotlight = () => {
   const artistSpotlight = selectArtistSpotlight();
@@ -18,14 +11,7 @@ const ArtistSpotlight = () => {
       <Row>
         {artistSpotlight.map((blog) => (
           <Col md="4" key={blog.id}>
-            <Card>
-              <CardImg top src={blog.blogImage} alt={blog.title} />
-              <CardBody>
-                <h5>{blog.title}</h5>
-                <CardText>{blog.description}</CardText>
-                <Button href={`/blogs/${blog.id}`}>Read More</Button>
-              </CardBody>
-            </Card>
+            <BlogCard blog={blog} />
           </Col>
         ))}
       </Row>
