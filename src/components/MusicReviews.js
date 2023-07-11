@@ -10,7 +10,7 @@ const MusicReviews = () => {
     <Container>
       <Row>
         {musicReviews.map((blog) => (
-          <Col md="4" key={blog.id}>
+          <Col key={blog.id}>
             <BlogCard blog={blog} />
           </Col>
         ))}

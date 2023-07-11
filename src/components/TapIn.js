@@ -2,8 +2,8 @@ import React from "react";
 
 const TapIn = () => {
   return (
-    <div>
-      <h4>Tap In</h4>
+    <div className="offset-1" lg="4" offset="2">
+      <h4 className="text-end">Tap In</h4>
       <iframe
         title="tap-in-spotify"
         class="spotify"

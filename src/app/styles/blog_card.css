@@ -1,0 +1,22 @@
+.card {
+  width: 18rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #526863;
+}
+
+.card-title:hover {
+  text-decoration: underline;
+}
+
+.card-btn {
+  background-color: #715c83;
+  color: #fff;
+}
+
+.card-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}

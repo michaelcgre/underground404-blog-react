@@ -1,0 +1,26 @@
+.recent-articles-section {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  position: relative;
+  background-color: #242424;
+}
+
+.recent-articles-section::before,
+.recent-articles-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  transform: skewY(-3deg);
+}
+
+.recent-articles-section::before {
+  top: -50px;
+  background-color: #f5fefd;
+}
+
+.recent-articles-section::after {
+  bottom: -50px;
+  background-color: #fff;
+}

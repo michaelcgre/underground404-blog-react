@@ -10,7 +10,7 @@ const Lifestyle = () => {
     <Container>
       <Row>
         {lifestyle.map((blog) => (
-          <Col md="4" key={blog.id}>
+          <Col key={blog.id}>
             <BlogCard blog={blog} />
           </Col>
         ))}

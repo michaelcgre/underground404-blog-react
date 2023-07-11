@@ -9,6 +9,7 @@ import {
   CarouselCaption,
 } from "reactstrap";
 import { selectFeaturesBlogs } from "../data/blogsSlice";
+import "../app/styles/banner.css";
 
 function BannerCarousel(props) {
   const featuredBlogs = selectFeaturesBlogs();
@@ -60,7 +61,7 @@ function BannerCarousel(props) {
 
   return (
     <div className="banner-wrapper">
-      <Container className="carousel-section d-flex flex-column align-items-center justify-content-center">
+      <Container className="banner-carousel-section d-flex flex-column align-items-center justify-content-center">
         <h1 className="banner-title mb-5">Beyond the Mainstream</h1>
         <Carousel
           className="banner-carousel mb-5"

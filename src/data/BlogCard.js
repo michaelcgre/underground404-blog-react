@@ -8,23 +8,30 @@ import {
   CardText,
   Button,
 } from "reactstrap";
+import "../app/styles/blog_card.css";
 
 const BlogCard = ({ blog }) => {
   return (
-    <Card key={blog.id} className="mb-4">
-      <Link to={`/blogs/${blog.id}`}>
-        <CardImg top width="100%" src={blog.blogImage} alt={blog.title} />
-      </Link>
-      <CardBody>
-        <CardTitle>
-          <a href={`/blogs/${blog.id}`}>{blog.title}</a>
-        </CardTitle>
-        <CardText>{blog.description}</CardText>
-        <Button tag={Link} to={`/blogs/${blog.id}`} color="primary">
-          Read More
-        </Button>
-      </CardBody>
-    </Card>
+    <div className="d-flex justify-content-center align-content-center">
+      <Card key={blog.id} className="mb-4 card">
+        <Link to={`/blogs/${blog.id}`}>
+          <CardImg top width="100%" src={blog.blogImage} alt={blog.title} />
+        </Link>
+        <CardBody className="card-body">
+          <CardTitle>
+            <a className="card-title fw-bold" href={`/blogs/${blog.id}`}>
+              {blog.title}
+            </a>
+          </CardTitle>
+          <CardText className="card-text">{blog.description}</CardText>
+          <div className="text-end">
+            <Button className="card-btn" tag={Link} to={`/blogs/${blog.id}`}>
+              Read More
+            </Button>
+          </div>
+        </CardBody>
+      </Card>
+    </div>
   );
 };
 

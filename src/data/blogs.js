@@ -19,7 +19,7 @@ import XavierWulf2 from "../app/assets/XavierWulf2.jpg";
 export const blogs = [
   {
     id: 0,
-    title: "Denzel Curry- Artist Spotlight",
+    title: "Denzel Curry - Artist Spotlight",
     blogType: "Artist Spotlight",
     author: "Michael Gregorio",
     date: "06/08/2023",
@@ -51,7 +51,7 @@ export const blogs = [
   },
   {
     id: 1,
-    title: "Flatbush Zombies- Artist Spotlight",
+    title: "Flatbush Zombies - Artist Spotlight",
     blogType: "Artist Spotlight",
     author: "Michael Gregorio",
     date: "06/08/2023",
@@ -75,7 +75,7 @@ export const blogs = [
   },
   {
     id: 2,
-    title: "Castle by BLP Kosher- Music Review",
+    title: "Castle by BLP Kosher - Music Review",
     blogType: "Music Review",
     author: "Michael Gregorio",
     date: "06/08/2023",

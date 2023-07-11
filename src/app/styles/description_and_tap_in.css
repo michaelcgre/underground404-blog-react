@@ -1,0 +1,13 @@
+.description-spotify-section {
+  margin-top: 1rem;
+  padding: 6rem 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 992px) {
+  .description-spotify-section {
+    margin-top: 0;
+  }
+}
