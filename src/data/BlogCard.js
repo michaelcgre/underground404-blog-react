@@ -25,7 +25,11 @@ const BlogCard = ({ blog }) => {
           </CardTitle>
           <CardText className="card-text">{blog.description}</CardText>
           <div className="text-end">
-            <Button className="card-btn" tag={Link} to={`/blogs/${blog.id}`}>
+            <Button
+              className="card-btn fw-bold"
+              tag={Link}
+              to={`/blogs/${blog.id}`}
+            >
               Read More
             </Button>
           </div>

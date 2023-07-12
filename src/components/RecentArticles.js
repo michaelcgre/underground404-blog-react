@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import {
   Container,
   Carousel,
@@ -25,7 +24,13 @@ const BlogCarousel = () => {
 
   useEffect(() => {
     const updateCardsPerSlide = () => {
-      setCardsPerSlide(window.innerWidth <= 767 ? 1 : 3);
+      if (window.innerWidth <= 767) {
+        setCardsPerSlide(1);
+      } else if (window.innerWidth <= 991) {
+        setCardsPerSlide(2);
+      } else {
+        setCardsPerSlide(3);
+      }
     };
 
     updateCardsPerSlide();
@@ -43,7 +48,7 @@ const BlogCarousel = () => {
   return (
     <div className="recent-articles-section">
       <Container>
-        <h2 className="d-flex justify-content-center align-content-center fs-1 my-4">
+        <h2 className="d-flex justify-content-center align-content-center fs-1 mt-4 mb-5">
           Recent Articles
         </h2>
         <Carousel
@@ -56,8 +61,6 @@ const BlogCarousel = () => {
             const startIndex = slideIndex * cardsPerSlide;
             const endIndex = startIndex + cardsPerSlide;
             const slideBlogs = blogs.slice(startIndex, endIndex);
-
-            // ...
 
             return (
               <CarouselItem key={slideIndex}>
@@ -72,10 +75,10 @@ const BlogCarousel = () => {
 
                     return (
                       <div
-                        className="col-md-4 blog-card-wrapper"
+                        className={`col-md-${12 / cardsPerSlide}`}
                         key={blogIndex}
                       >
-                        <BlogCard blog={blogToShow} />{" "}
+                        <BlogCard blog={blogToShow} />
                       </div>
                     );
                   })}
@@ -84,7 +87,7 @@ const BlogCarousel = () => {
             );
           })}
           {showPreviousControl && (
-            <div className="carousel-control-prev">
+            <div carousel-control-prev>
               <CarouselControl
                 direction="prev"
                 directionText="Previous"
@@ -93,7 +96,7 @@ const BlogCarousel = () => {
             </div>
           )}
           {showNextControl && (
-            <div className="carousel-control-next">
+            <div carousel-control-next>
               <CarouselControl
                 direction="next"
                 directionText="Next"

@@ -18,8 +18,8 @@ const YouMightLike = ({ currentBlogId }) => {
   }
 
   return (
-    <div>
-      <h2>You Might Like</h2>
+    <div className="mt-3">
+      <h2 className="text-center mb-3">You Might Like:</h2>
       <div className="card-container">
         {randomIndexes.map((index) => {
           const blog = blogs[index];

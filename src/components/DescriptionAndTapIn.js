@@ -16,10 +16,14 @@ export const DescriptionAndTapIn = () => {
     >
       <Container>
         <Row>
-          <Col xs="12" md="6">
+          <Col xs="12" lg="6">
             <Description />
           </Col>
-          <Col xs="12" md="6">
+          <Col
+            xs="12"
+            lg="5"
+            className="offset-lg-1 mt-5 mt-lg-0 d-flex justify-content-center align-content-center d-lg-block"
+          >
             <TapIn />
           </Col>
         </Row>

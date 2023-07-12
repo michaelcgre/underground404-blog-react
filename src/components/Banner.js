@@ -46,7 +46,7 @@ function BannerCarousel(props) {
       >
         <Link to={`/blogs/${blog.id}`} className="carousel-link">
           <img
-            className="banner-images"
+            className="banner-images img-fluid"
             src={blog.carouselImage}
             alt={blog.title}
           />
@@ -62,7 +62,7 @@ function BannerCarousel(props) {
   return (
     <div className="banner-wrapper">
       <Container className="banner-carousel-section d-flex flex-column align-items-center justify-content-center">
-        <h1 className="banner-title mb-5">Beyond the Mainstream</h1>
+        <h1 className="banner-title mb-5 text-center">Beyond the Mainstream</h1>
         <Carousel
           className="banner-carousel mb-5"
           activeIndex={activeIndex}

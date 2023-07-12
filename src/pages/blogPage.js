@@ -13,27 +13,35 @@ const BlogPage = () => {
   }
 
   return (
-    <Container>
+    <Container className="mt-4">
       <Row>
         <Col lg="8">
           <img
-            className="img-fluid"
+            className="img-fluid rounded"
             top
             src={blog.blogHeader}
             alt={blog.title}
           />
-          <h1>{blog.title}</h1>
-          <span>{blog.author}</span>
-          <span>{blog.date}</span>
-          <p>{blog.paragraphOne}</p>
-          <p>{blog.paragraphTwo}</p>
-          <p>{blog.paragraphThree}</p>
-          <img className="img-fluid" src={blog.extraImage} alt={blog.title} />
-          <p>{blog.paragraphFour}</p>
-          <p>{blog.paragraphFive}</p>
-          <p>{blog.paragraphSix}</p>
-          <p>{blog.paragraphSeven}</p>
-          <p>{blog.paragraphEight}</p>
+          <h1 className="mt-2">{blog.title}</h1>
+          <div className="d-flex justify-content-between my-3">
+            <span>{blog.author}</span>
+            <span>{blog.date}</span>
+          </div>
+          <p className="fs-5">{blog.paragraphOne}</p>
+          <p className="fs-5">{blog.paragraphTwo}</p>
+          <p className="fs-5">{blog.paragraphThree}</p>
+          <div className="d-flex justify-content-center align-content-center my-3">
+            <img
+              className="img-fluid rounded "
+              src={blog.extraImage}
+              alt={blog.title}
+            />
+          </div>
+          <p className="fs-5">{blog.paragraphFour}</p>
+          <p className="fs-5">{blog.paragraphFive}</p>
+          <p className="fs-5">{blog.paragraphSix}</p>
+          <p className="fs-5">{blog.paragraphSeven}</p>
+          <p className="fs-5">{blog.paragraphEight}</p>
         </Col>
         <Col>
           <iframe

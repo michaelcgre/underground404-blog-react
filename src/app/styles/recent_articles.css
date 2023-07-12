@@ -24,3 +24,26 @@
   bottom: -50px;
   background-color: #fff;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+}
+
+.carousel-control-prev {
+  left: -5rem !important; /* Adjust the value as per your requirement */
+}
+
+.carousel-control-next {
+  right: -5rem !important; /* Adjust the value as per your requirement */
+}
+
+@media (max-width: 768px) {
+  .carousel-control-prev {
+    left: 0rem !important; /* Adjust the value as per your requirement */
+  }
+
+  .carousel-control-next {
+    right: 0rem !important; /* Adjust the value as per your requirement */
+  }
+}

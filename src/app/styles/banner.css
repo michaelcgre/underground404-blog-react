@@ -5,11 +5,11 @@
     rgba(36, 36, 36, 1) 30%,
     rgba(245, 254, 253, 1) 62%
   );
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 
-.banner-carousel-section {
-  max-width: 1000px;
+.banner-carousel {
+  max-width: 70rem;
 }
 
 .banner-title {
@@ -45,4 +45,12 @@
   width: 3rem;
   height: 3rem;
   margin-top: 20rem;
+}
+
+.banner-carousel-prev {
+  margin-left: 3.5rem;
+}
+
+.banner-carousel-next {
+  margin-right: 3.5rem;
 }
