@@ -10,11 +10,16 @@
 
 .card-title:hover {
   text-decoration: underline;
+  color: #647f79;
 }
 
 .card-btn {
   background-color: #715c83 !important;
   color: #fff;
+}
+
+.card-btn:hover {
+  background-color: #8f79a1 !important;
 }
 
 .card-btn:hover {

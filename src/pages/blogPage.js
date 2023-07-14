@@ -57,7 +57,7 @@ const BlogPage = () => {
           <YouMightLike currentBlogId={Number(id)} />
         </Col>
       </Row>
-      <Row>
+      <Row className="mt-5">
         <DiscussionEmbed
           shortname="underground404-com"
           config={{
